@@ -1,4 +1,5 @@
 import { Target, Users, Shield, Zap } from "lucide-react";
+import TeamImg from "../assets/TeamImg.png";
 
 interface AboutPageProps {
   onNavigate?: (page: string) => void;
@@ -86,65 +87,35 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               <h2 className="text-2xl sm:text-3xl tracking-tight mb-4 sm:mb-6">Nuestra Historia</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Seeket nació de una necesidad clara: facilitar la conexión entre empresas que
-                  buscan crecer y las agencias especializadas que pueden ayudarlas.
+                  Somos un grupo de jóvenes universitarios que, a inicios de 2025, realizamos una investigación sobre 
+                  cómo operan actualmente los negocios en el ámbito del marketing digital y cuántos de ellos 
+                  cuentan realmente con una agencia aliada para apoyar su crecimiento. A partir de los datos que 
+                  recopilamos, nos dimos cuenta de que solo una parte trabaja con una agencia de manera formal.
                 </p>
                 <p>
-                  En 2024, un grupo de emprendedores y expertos en marketing digital se unieron con
-                  una visión: crear un marketplace transparente, eficiente y confiable donde las
-                  empresas pudieran encontrar a su socio ideal.
+                  Seeket nació con esa visión de facilitar la conexión entre empresas que buscan crecer y agencias
+                  especializadas que pueden ayudarlas a conseguirlo, mediante una plataforma que ofrezca guía, 
+                  acompañamiento e innovación creativa, que son pilares del marketing.
                 </p>
                 <p>
-                  Hoy, conectamos a cientos de empresas con agencias verificadas en toda
-                  Latinoamérica, facilitando colaboraciones exitosas y duraderas.
+                  Hoy, buscamos lanzar nuestra idea para mejorar las oportunidades de mercado en el marketing
+                  digital y fomentar su importancia en los negocios, a cualquier escala y lugar.
                 </p>
               </div>
             </div>
-
+            {/*Imagen de nosotros*/}
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🚀</div>
-                  <p className="text-gray-700 text-lg">
-                    Impulsando el crecimiento de negocios en toda Latinoamérica
-                  </p>
-                </div>
+              <div className="rounded-3xl flex items-center justify-center overflow-hidden">
+                <img src={TeamImg} alt="Nuestro equipo" className="w-full h-full object-cover" />
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Estadísticas */}
-      <div className="bg-gray-50 py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-2xl p-6 sm:p-8">
-              <div className="text-3xl sm:text-4xl bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2">
-                500+
-              </div>
-              <p className="text-gray-600">Agencias Verificadas</p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 sm:p-8">
-              <div className="text-3xl sm:text-4xl bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2">
-                1,200+
-              </div>
-              <p className="text-gray-600">Proyectos Exitosos</p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 sm:p-8">
-              <div className="text-3xl sm:text-4xl bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2">
-                15+
-              </div>
-              <p className="text-gray-600">Países</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* CTA */}
-      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+      <div className="bg-gray-50 py-12 sm:py-16 md:py-20">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl tracking-tight mb-4 sm:mb-6">¿Listo para crecer?</h2>
           <p className="text-gray-600 mb-6 sm:mb-8 px-4">
@@ -165,6 +136,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
