@@ -81,26 +81,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/people/Seeket/61581886470321/"
                     className="hover:text-gray-900 transition-colors"
                   >
                     Facebook
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    X
                   </a>
                 </li>
               </ul>

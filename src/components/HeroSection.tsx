@@ -77,7 +77,6 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
                   <SelectItem value="desarrollo">Desarrollo Web</SelectItem>
                 </SelectContent>
               </Select>
-
               <Select>
                 <SelectTrigger className="font-['Poppins',sans-serif] bg-white border-gray-200 rounded-full py-6 shadow-sm hover:shadow-md transition-shadow hover:border-orange-300">
                   <SelectValue placeholder="Ubicación" />
